@@ -38,16 +38,14 @@ s = Label(gui, text="Select photos")
 s.grid(row=0, column=0)
 select_photos = ttk.Button(gui, text="Browse", command=get_images)
 select_photos.grid(row=0, column=2)
-
 ttk.Label(gui, text="Watermark count").grid(row=3)
 ttk.Label(gui, text="Watermark size").grid(row=4)
-
 e1 = ttk.Entry(gui)
+e1.insert(END, '4')
 e2 = ttk.Entry(gui)
-
+e2.insert(END, '40')
 e1.grid(row=3, column=1)
 e2.grid(row=4, column=1)
-
 run_btn = ttk.Button(gui, text="RUN", command=run)
 run_btn.grid(row=5, column=1)
 gui.mainloop()
